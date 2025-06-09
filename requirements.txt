@@ -1,0 +1,6 @@
+qrcode[pil]
+pandas
+Pillow
+openpyxl
+re
+unicodedata

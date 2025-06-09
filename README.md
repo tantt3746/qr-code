@@ -1,4 +1,4 @@
-# Generate QR Code and then print it
+# Generate QR Code and then save to image
 
 # Setup env
 python3 -m venv venv
