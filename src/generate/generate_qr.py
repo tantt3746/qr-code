@@ -1,15 +1,18 @@
 import re
 import unicodedata
+from pathlib import Path
 
 import pandas as pd
 import qrcode
 import os
 
 # --- Configuration ---
+BASE_DIR = Path(__file__).parent.parent
+print(BASE_DIR)
 # The name of your Excel file
-EXCEL_FILE = '../resources/QRCode-TaisanCong.xlsx'
+EXCEL_FILE = f'{BASE_DIR}/resources/QRCode-TaisanCong.xlsx'
 # The main folder where all QR codes will be saved
-OUTPUT_DIR = '../qr_codes_by_department'
+OUTPUT_DIR = f'{BASE_DIR}/qr_codes_by_department'
 # The column name in your Excel file that contains the department
 DEPARTMENT_COLUMN = 'Phòng'
 INFORMATION_COLUMN = 'Thông tin'
